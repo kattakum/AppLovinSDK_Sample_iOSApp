@@ -13,13 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         // SDKの初期化。アプリ起動時に呼び出しておくと、バックグランドで広告を事前に読み込んでおけるので良いです。
         ALSdk.initializeSdk()
-        
+    
         ALSdk.shared()?.settings.isTestAdsEnabled = true
         return true
     }

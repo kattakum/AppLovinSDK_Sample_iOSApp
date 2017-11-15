@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,21 +18,60 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2T-y4-76l">
-                                <rect key="frame" x="103" y="311" width="169" height="45"/>
+                                <rect key="frame" x="131" y="120" width="114" height="45"/>
                                 <color key="backgroundColor" red="0.11009090685420336" green="0.45304059061776397" blue="0.96057318652849744" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="Click to get Ad">
+                                <state key="normal" title="Interstitial">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="getAd:" destination="BYZ-38-t0r" eventType="touchDown" id="JZx-6A-LcA"/>
+                                    <action selector="getInterstitial:" destination="BYZ-38-t0r" eventType="touchDown" id="t7T-V0-uA9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQl-2e-AqV">
+                                <rect key="frame" x="146" y="185" width="83" height="45"/>
+                                <color key="backgroundColor" red="0.11009090689999999" green="0.45304059060000001" blue="0.96057318650000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Banner">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="getBanner:" destination="BYZ-38-t0r" eventType="touchDown" id="eIa-fx-iNf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLT-aE-YVX">
+                                <rect key="frame" x="150" y="250" width="75" height="45"/>
+                                <color key="backgroundColor" red="0.11009090689999999" green="0.45304059060000001" blue="0.96057318650000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Native">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="getNative:" destination="BYZ-38-t0r" eventType="touchDown" id="tQJ-ue-YUy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRT-Nd-Aue">
+                                <rect key="frame" x="129.5" y="315" width="117" height="45"/>
+                                <color key="backgroundColor" red="0.11009090689999999" green="0.45304059060000001" blue="0.96057318650000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Rectangle">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="getRectangle:" destination="BYZ-38-t0r" eventType="touchDown" id="OPX-jW-RiS"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="S2T-y4-76l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gce-kP-fDH"/>
-                            <constraint firstItem="S2T-y4-76l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RyX-hj-OE5"/>
+                            <constraint firstItem="bQl-2e-AqV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2dF-WE-d5d"/>
+                            <constraint firstItem="BLT-aE-YVX" firstAttribute="top" secondItem="bQl-2e-AqV" secondAttribute="bottom" constant="20" id="3bA-bJ-C4y"/>
+                            <constraint firstItem="rRT-Nd-Aue" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EM3-VZ-vFY"/>
+                            <constraint firstItem="S2T-y4-76l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jfu-Yf-hea"/>
+                            <constraint firstItem="S2T-y4-76l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="XWa-3T-P6p"/>
+                            <constraint firstItem="bQl-2e-AqV" firstAttribute="top" secondItem="S2T-y4-76l" secondAttribute="bottom" constant="20" id="cri-VJ-w2W"/>
+                            <constraint firstItem="BLT-aE-YVX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rgm-2I-us5"/>
+                            <constraint firstItem="rRT-Nd-Aue" firstAttribute="top" secondItem="BLT-aE-YVX" secondAttribute="bottom" constant="20" id="wiu-Dh-zg0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
